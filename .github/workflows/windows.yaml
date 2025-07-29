@@ -20,6 +20,7 @@ jobs:
           repository: utuhiro78/merge-ut-dictionaries
       - name: build
         working-directory: src/merge
+        shell: bash
         run: |
           sh make.sh
           mv mozcdic-ut.txt ../../
